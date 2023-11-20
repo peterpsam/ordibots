@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#section1{
+    background-image: url(./F-q-rdsX0AAzatE.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+    
+    
+    
+    
+}
+#section1 h1{
+   font-size:3rem;
+   font-weight: bold;
+   position: absolute;
+   color: black;
+   right: 14%;
+   top: 50%;
+   padding: 15px;
+   font-family: 'Arvo', serif;
+}
+
+#section1 h1:hover{
+    text-decoration: underline;
+    
+}
+
+.ordilogo{
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
+.ordilogo img{
+    width: 15rem;
+    border-radius: 7.5rem;
+}
+
+.nav-bar{
+    font-family: 'Glass Antiqua', cursive;
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: black;
+    z-index: 1;
+    box-shadow: 0px 0px 2px #fff;
+    
+}
+
+.nav-bar a{
+    color: white;
+    text-decoration: dashed;
+}
+
+.nav-bar a:hover{
+    border: 2px solid whitesmoke;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+#about{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+
+   
+
+
+
+
+
+.aboutbody{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin: 0 auto;
+    align-items: center;
+    width: 50%;
+    padding-bottom: 30px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.threeD{
+    background-color: red;
+    color: white;
+    padding: 3px;
+    
+}
+.abouttitle{
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 0;
+    
+}
+    
+.abouttext{
+    color: white;
+    font-size: larger;
+    line-height: 30px;
+    
+    width: 70%;
+    
+    
+}
+    
+.abouttext a{
+    text-decoration: dashed;
+    color: white;
+    
+}
+
+.abouttext a:hover{
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+#team{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(246,246,246,255);
+}
+
+.hanger{
+    width: 400px;
+    margin-top: 50px;
+    
+}
+
+
+
+.founder1{
+    
+    padding: 20px;
+    position: relative;
+}
+
+
+
+.content{
+    
+    height: 300px;
+    width: 300px;
+    top: 40%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.rafpfp img{
+    width: 100px;
+    padding: 5px;
+    border-radius: 50px;
+    
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.minicontent{
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+    
+.twitterlogo img{
+    width: 30px;
+    border-radius: 15px;
+}
+
+.founder1 p{
+    color: rgb(5, 4, 4);
+    margin-top: 0;
+}
+
+
+/* FAQ */
+#FAQ{
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+#accordion{
+    margin: 0 auto;
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+    
+   
+    
+    
+}
+@media screen and (max-width:907px) {
+    #FAQ{
+       min-width: 220px;
+    }
+}
+
+
+#accordion li{
+    color:  white;
+    background-color: black;
+}
+
+
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color:  white;
+}
+
+#accordion label + input[type="radio"]{
+    display: none;
+}
+
+#accordion .contents{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .contents{
+    max-height: 400px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0b0b0b; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #272424; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
